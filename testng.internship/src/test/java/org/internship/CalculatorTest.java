@@ -1,9 +1,7 @@
 package org.internship;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class CalculatorTest {
 
@@ -32,5 +30,20 @@ public class CalculatorTest {
     @Test(dataProvider = "test1")
     public void testCalculator(int a, int b, int sum) {
         Assert.assertEquals(calculator.sum(a, b), sum, "The test failed!");
+    }
+
+    @BeforeClass
+    public void beforeClass() {
+        System.out.println("This will be printed before class");
+    }
+
+    @BeforeTest
+    public void beforeTest() {
+        System.out.println("This will be printed before test");
+    }
+
+    @BeforeSuite
+    public void beforeSuite() {
+        System.out.println("This will be printed before suite");
     }
 }
