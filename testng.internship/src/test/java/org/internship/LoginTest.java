@@ -1,10 +1,7 @@
 package org.internship;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class LoginTest {
 
@@ -22,32 +19,47 @@ public class LoginTest {
     @DataProvider(name = "test_password")
     public Object[][] createDataPassword() {
         return new String[][]{
-                {"012345678912", "The password was set correctly."},
-                {"something12", "The password need to have 12 or more characters."},
-
+                {"Something1!", "Password is valid and was set to your account."},
+                {"somepas", "New password need to have at least 8 characters"},
+                {"password12!", "New password need to have at least one uppercase letter"},
+                {"Password12", "New password need to contain a special character"},
+                {"Password!@", "New password need to have at least one numerical character"},
+                {"A" + Login.getUsername() + "!1", "New password need to not contain username"}
         };
     }
 
-
-    @BeforeMethod(alwaysRun = false)
+    @BeforeMethod
     public void setUp() {
         login = new Login();
+        System.out.println("Make setUp for LoginTest methods");
     }
 
-    @Test(dataProvider = "test_username", priority = 1)
+    @Test(dataProvider = "test_username", priority = 1, groups = {"test_username"},
+            description = "This method will test Login Username")
     public void testLoginUsername(String username, String message) {
-        System.out.println("This is first executed");
+        System.out.println("First execute testLoginUsername");
         Assert.assertEquals(login.setUsername(username), message, "The test failed!");
     }
 
-    @Test(dataProvider = "test_password", priority = 2)
+    @Test(dataProvider = "test_password", priority = 2, groups = {"test_password"},
+            description = "This method will test Login Password", dependsOnMethods = {"testLoginUsername"})
     public void testLoginPassword(String password, String message) {
-        System.out.println("This is second executed");
+        System.out.println("Second execute testLoginPassword");
         Assert.assertEquals(login.setPassword(password), message, "The test failed!");
     }
 
-    @BeforeTest
-    public void beforeTest() {
-        System.out.println("Before test 2");
+    @AfterMethod (description = "Tear Down for all LoginTest methods")
+    public void tearDown() {
+        System.out.println("Now we make tear down for methods testLoginUsername and testLoginPassword");
     }
+    @BeforeClass
+    public void beforeClass() {
+        System.out.println("Now we run tests from the LoginTest class");
+    }
+
+    @AfterClass
+    public void afterClass() {
+        System.out.println("Now we finish tests from the LoginTest class");
+    }
+
 }

@@ -1,4 +1,40 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.657 s - in TestSuite
+Tests run: 21, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.672 s <<< FAILURE! - in TestSuite
+testCalculatorSoftAssert(org.internship.CalculatorTest)  Time elapsed: 0.016 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Intentionally failed! expected [true] but found [false]
+	at org.internship.CalculatorTest.testCalculatorSoftAssert(CalculatorTest.java:48)
+
+testCalculatorSoftAssert(org.internship.CalculatorTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Intentionally failed! expected [true] but found [false]
+	at org.internship.CalculatorTest.testCalculatorSoftAssert(CalculatorTest.java:48)
+
+testCalculatorSoftAssert(org.internship.CalculatorTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Intentionally failed! expected [true] but found [false]
+	at org.internship.CalculatorTest.testCalculatorSoftAssert(CalculatorTest.java:48)
+
+testCalculatorSoftAssert(org.internship.CalculatorTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Intentionally failed! expected [true] but found [false]
+	at org.internship.CalculatorTest.testCalculatorSoftAssert(CalculatorTest.java:48)
+
+testCalculatorSoftAssert(org.internship.CalculatorTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Intentionally failed! expected [true] but found [false]
+	at org.internship.CalculatorTest.testCalculatorSoftAssert(CalculatorTest.java:48)
+
+testCalculatorSoftAssert(org.internship.CalculatorTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Intentionally failed! expected [true] but found [false]
+	at org.internship.CalculatorTest.testCalculatorSoftAssert(CalculatorTest.java:48)
+

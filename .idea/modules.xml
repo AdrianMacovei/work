@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Internship Maven.iml" filepath="$PROJECT_DIR$/.idea/Internship Maven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testng.internship/testng.internship.iml" filepath="$PROJECT_DIR$/testng.internship/testng.internship.iml" />
+    </modules>
+  </component>
+</project>
