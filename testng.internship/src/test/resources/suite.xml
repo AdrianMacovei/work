@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="RegressionSuite" configfailurepolicy="continue">
+<suite name="RegressionSuite" configfailurepolicy="continue" parallel="methods" thread-count="6">
     <test name="Calculator Test">
         <classes>
             <class name="org.internship.CalculatorTest">
                 <methods>
-
                 </methods>
             </class>
         </classes>
@@ -15,7 +14,6 @@
         <classes>
             <class name="org.internship.LoginTest">
                 <methods>
-
                 </methods>
             </class>
         </classes>

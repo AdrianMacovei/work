@@ -7,7 +7,7 @@ public class CalculatorTest {
 
     Calculator calculator;
 
-    @DataProvider(name = "test1")
+    @DataProvider(name = "calculatorTestData")
     public Object[][] createData1() {
         return new Integer[][]{
                 {2, 8, 10},
@@ -27,7 +27,8 @@ public class CalculatorTest {
         calculator = new Calculator();
     }
 
-    @Test(dataProvider = "test1")
+    @Test(dataProvider = "calculatorTestData",
+            description = "This test method test the Calculator sum method with different values", timeOut = 10)
     public void testCalculator(int a, int b, int sum) {
         Assert.assertEquals(calculator.sum(a, b), sum, "The test failed!");
     }

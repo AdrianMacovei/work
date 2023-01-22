@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="9" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-20T16:29:37 EET" name="RegressionSuite" finished-at="2023-01-20T16:29:37 EET" duration-ms="74">
+  <suite started-at="2023-01-21T23:03:09 EET" name="RegressionSuite" finished-at="2023-01-21T23:03:09 EET" duration-ms="106">
     <groups>
     </groups>
-    <test started-at="2023-01-20T16:29:37 EET" name="Calculator Test" finished-at="2023-01-20T16:29:37 EET" duration-ms="44">
+    <test started-at="2023-01-21T23:03:09 EET" name="Calculator Test" finished-at="2023-01-21T23:03:09 EET" duration-ms="58">
       <class name="org.internship.CalculatorTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.CalculatorTest@7d3a22a9]" started-at="2023-01-20T16:29:37 EET" name="setUp" finished-at="2023-01-20T16:29:37 EET" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="beforeTest" finished-at="2023-01-21T23:03:09 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="beforeClass" finished-at="2023-01-21T23:03:09 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="setUp" finished-at="2023-01-21T23:03:09 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCalculator(int,int,int)[pri:0, instance:org.internship.CalculatorTest@7d3a22a9]" started-at="2023-01-20T16:29:37 EET" name="testCalculator" data-provider="test1" finished-at="2023-01-20T16:29:37 EET" duration-ms="3" status="PASS">
+        <test-method signature="testCalculator(int,int,int)[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="testCalculator" description="This test method test the Calculator sum method with different values" data-provider="calculatorTestData" finished-at="2023-01-21T23:03:09 EET" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,11 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCalculator -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.CalculatorTest@7d3a22a9]" started-at="2023-01-20T16:29:37 EET" name="setUp" finished-at="2023-01-20T16:29:37 EET" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCalculator(int,int,int)[pri:0, instance:org.internship.CalculatorTest@7d3a22a9]" started-at="2023-01-20T16:29:37 EET" name="testCalculator" data-provider="test1" finished-at="2023-01-20T16:29:37 EET" duration-ms="0" status="PASS">
+        <test-method signature="testCalculator(int,int,int)[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="testCalculator" description="This test method test the Calculator sum method with different values" data-provider="calculatorTestData" finished-at="2023-01-21T23:03:09 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,32 +61,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCalculator -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.CalculatorTest@7d3a22a9]" started-at="2023-01-20T16:29:37 EET" name="setUp" finished-at="2023-01-20T16:29:37 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="setUp" finished-at="2023-01-21T23:03:09 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCalculator(int,int,int)[pri:0, instance:org.internship.CalculatorTest@7d3a22a9]" started-at="2023-01-20T16:29:37 EET" name="testCalculator" data-provider="test1" finished-at="2023-01-20T16:29:37 EET" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculator -->
-        <test-method signature="testCalculator(int,int,int)[pri:0, instance:org.internship.CalculatorTest@7d3a22a9]" started-at="2023-01-20T16:29:37 EET" name="testCalculator" data-provider="test1" finished-at="2023-01-20T16:29:37 EET" duration-ms="0" status="PASS">
+        <test-method signature="testCalculator(int,int,int)[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="testCalculator" description="This test method test the Calculator sum method with different values" data-provider="calculatorTestData" finished-at="2023-01-21T23:03:09 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -103,11 +86,36 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCalculator -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.CalculatorTest@7d3a22a9]" started-at="2023-01-20T16:29:37 EET" name="setUp" finished-at="2023-01-20T16:29:37 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="setUp" finished-at="2023-01-21T23:03:09 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCalculator(int,int,int)[pri:0, instance:org.internship.CalculatorTest@7d3a22a9]" started-at="2023-01-20T16:29:37 EET" name="testCalculator" data-provider="test1" finished-at="2023-01-20T16:29:37 EET" duration-ms="0" status="PASS">
+        <test-method signature="testCalculator(int,int,int)[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="testCalculator" description="This test method test the Calculator sum method with different values" data-provider="calculatorTestData" finished-at="2023-01-21T23:03:09 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculator -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="setUp" finished-at="2023-01-21T23:03:09 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCalculator(int,int,int)[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="testCalculator" description="This test method test the Calculator sum method with different values" data-provider="calculatorTestData" finished-at="2023-01-21T23:03:09 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,15 +136,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCalculator -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.CalculatorTest@7d3a22a9]" started-at="2023-01-20T16:29:37 EET" name="setUp" finished-at="2023-01-20T16:29:37 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="setUp" finished-at="2023-01-21T23:03:09 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.CalculatorTest@7d3a22a9]" started-at="2023-01-20T16:29:37 EET" name="setUp" finished-at="2023-01-20T16:29:37 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="setUp" finished-at="2023-01-21T23:03:09 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCalculator(int,int,int)[pri:0, instance:org.internship.CalculatorTest@7d3a22a9]" started-at="2023-01-20T16:29:37 EET" name="testCalculator" data-provider="test1" finished-at="2023-01-20T16:29:37 EET" duration-ms="0" status="PASS">
+        <test-method signature="testCalculator(int,int,int)[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="testCalculator" description="This test method test the Calculator sum method with different values" data-provider="calculatorTestData" finished-at="2023-01-21T23:03:09 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -159,13 +167,63 @@
         </test-method> <!-- testCalculator -->
       </class> <!-- org.internship.CalculatorTest -->
     </test> <!-- Calculator Test -->
-    <test started-at="2023-01-20T16:29:37 EET" name="Login Test" finished-at="2023-01-20T16:29:37 EET" duration-ms="4">
+    <test started-at="2023-01-21T23:03:09 EET" name="Login Test" finished-at="2023-01-21T23:03:09 EET" duration-ms="14">
+      <class name="org.internship.CalculatorTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:org.internship.CalculatorTest@4278a03f]" started-at="2023-01-21T23:03:09 EET" name="beforeSuite" finished-at="2023-01-21T23:03:09 EET" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+      </class> <!-- org.internship.CalculatorTest -->
       <class name="org.internship.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.LoginTest@96def03]" started-at="2023-01-20T16:29:37 EET" name="setUp" finished-at="2023-01-20T16:29:37 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:org.internship.LoginTest@59d016c9]" started-at="2023-01-21T23:03:09 EET" name="beforeTest" finished-at="2023-01-21T23:03:09 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.LoginTest@59d016c9]" started-at="2023-01-21T23:03:09 EET" name="setUp" finished-at="2023-01-21T23:03:09 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginPassword(java.lang.String,java.lang.String)[pri:0, instance:org.internship.LoginTest@96def03]" started-at="2023-01-20T16:29:37 EET" name="testLoginPassword" data-provider="test_password" finished-at="2023-01-20T16:29:37 EET" duration-ms="0" status="PASS">
+        <test-method signature="testLoginUsername(java.lang.String,java.lang.String)[pri:1, instance:org.internship.LoginTest@59d016c9]" started-at="2023-01-21T23:03:09 EET" name="testLoginUsername" data-provider="test_username" finished-at="2023-01-21T23:03:09 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adrian_macovei]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[The username was set correctly.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginUsername -->
+        <test-method signature="testLoginUsername(java.lang.String,java.lang.String)[pri:1, instance:org.internship.LoginTest@59d016c9]" started-at="2023-01-21T23:03:09 EET" name="testLoginUsername" data-provider="test_username" finished-at="2023-01-21T23:03:09 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adrianm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[The username need to have 8 or more characters.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginUsername -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.LoginTest@59d016c9]" started-at="2023-01-21T23:03:09 EET" name="setUp" finished-at="2023-01-21T23:03:09 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.LoginTest@59d016c9]" started-at="2023-01-21T23:03:09 EET" name="setUp" finished-at="2023-01-21T23:03:09 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginPassword(java.lang.String,java.lang.String)[pri:2, instance:org.internship.LoginTest@59d016c9]" started-at="2023-01-21T23:03:09 EET" name="testLoginPassword" data-provider="test_password" finished-at="2023-01-21T23:03:09 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -181,7 +239,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginPassword -->
-        <test-method signature="testLoginPassword(java.lang.String,java.lang.String)[pri:0, instance:org.internship.LoginTest@96def03]" started-at="2023-01-20T16:29:37 EET" name="testLoginPassword" data-provider="test_password" finished-at="2023-01-20T16:29:37 EET" duration-ms="0" status="PASS">
+        <test-method signature="testLoginPassword(java.lang.String,java.lang.String)[pri:2, instance:org.internship.LoginTest@59d016c9]" started-at="2023-01-21T23:03:09 EET" name="testLoginPassword" data-provider="test_password" finished-at="2023-01-21T23:03:09 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -197,7 +255,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginPassword -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.LoginTest@96def03]" started-at="2023-01-20T16:29:37 EET" name="setUp" finished-at="2023-01-20T16:29:37 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.internship.LoginTest@59d016c9]" started-at="2023-01-21T23:03:09 EET" name="setUp" finished-at="2023-01-21T23:03:09 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
