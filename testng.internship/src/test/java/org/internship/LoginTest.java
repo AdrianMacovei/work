@@ -42,7 +42,7 @@ public class LoginTest {
     }
 
     @Test(dataProvider = "test_password", priority = 2, groups = {"test_password"},
-            description = "This method will test Login Password", dependsOnMethods = {"testLoginUsername"})
+            description = "This method will test Login Password")
     public void testLoginPassword(String password, String message) {
         System.out.println("Second execute testLoginPassword");
         Assert.assertEquals(login.setPassword(password), message, "The test failed!");

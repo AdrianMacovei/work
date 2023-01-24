@@ -69,4 +69,9 @@ public class CalculatorTestAnnotationTest {
     public void afterSuite() {
         System.out.println("The suite of tests is now finished");
     }
+
+    private void testCalculatorWithPrivate() {
+        // this will run and the print will appear in the console
+        System.out.println("This will not run because is private");
+    }
 }

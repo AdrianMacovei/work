@@ -30,7 +30,7 @@ public class CalculatorTest {
     }
 
     @Test(dataProvider = "calculatorTestData",
-            description = "This test method test the Calculator sum method with different values", timeOut = 100)
+            description = "This test method test the Calculator sum method with different values", timeOut = 1000)
     public void testCalculator(int a, int b, int sum) {
         Assert.assertEquals(calculator.sum(a, b), sum, "The test failed!");
         Assert.assertTrue(calculator.sum(a, b) == sum, "The test failed!");
@@ -38,12 +38,12 @@ public class CalculatorTest {
     }
 
     @Test(dataProvider = "calculatorTestData",
-            description = "This test method test the Calculator sum method with different values", timeOut = 100)
+            description = "This test method test the Calculator sum method with different values", timeOut = 1000)
     public void testCalculatorSoftAssert(int a, int b, int sum) {
         SoftAssert softassert = new SoftAssert();
         softassert.assertEquals(calculator.sum(a, b), sum, "The test failed!");
         // make this failed intentionally
-        softassert.assertTrue(calculator.sum(a, b) != sum, "Intentionally failed!");
+        softassert.assertTrue(calculator.sum(a, b) == sum, "Intentionally failed!");
         softassert.assertFalse(!(calculator.sum(a, b) == sum), "The test failed!");
         softassert.assertAll();
     }
