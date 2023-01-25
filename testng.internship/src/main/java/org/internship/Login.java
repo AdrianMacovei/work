@@ -33,7 +33,7 @@ public class Login {
             return "New password need to have at least one numerical character";
         } else if (!containsSpecialCharacter(password)) {
             return "New password need to contain a special character";
-        } else if (!notContainsUserName(password)) {
+        } else if (containsUserName(password)) {
             return "New password need to not contain username";
         }
         this.password = password;
@@ -60,9 +60,9 @@ public class Login {
         return match.find();
     }
 
-    private boolean notContainsUserName(String text) {
+    private boolean containsUserName(String text) {
 
-        return !text.contains(username.toLowerCase());
+        return text.contains(username.toLowerCase());
     }
 
     private boolean containsAtLeastOneNumber(String text) {

@@ -3,12 +3,12 @@ package org.internship;
 import lombok.Getter;
 import lombok.Setter;
 
+
+@Getter @Setter
 public class Calculator {
 
-    @Getter @Setter
     private int x;
 
-    @Getter @Setter
     private int y;
 
     public Calculator() {

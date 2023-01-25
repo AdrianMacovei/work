@@ -10,7 +10,8 @@ public class LoginTest {
     @DataProvider(name = "test_username")
     public Object[][] createDataUserName() {
         return new String[][]{
-                {"adrian_macovei", "The username was set correctly."},
+                {"adrian_m", "The username was set correctly."},
+                {"adrian_mc", "The username was set correctly."},
                 {"adrianm", "The username need to have 8 or more characters."},
 
         };

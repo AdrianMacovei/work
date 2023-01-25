@@ -5,7 +5,7 @@ import org.testng.annotations.*;
 
 
 @Test(dataProvider = "calculatorTestData")
-public class CalculatorTestAnnotationTest {
+public class CalculatorTestAnnotationTest extends BaseCalculatorClass {
 
     Calculator calculator;
 
@@ -34,40 +34,6 @@ public class CalculatorTestAnnotationTest {
         Assert.assertEquals(calculator.sum(a, b), sum, "The test failed!");
         Assert.assertTrue(calculator.sum(a, b) == sum, "The test failed!");
         Assert.assertFalse(!(calculator.sum(a, b) == sum), "The test failed!");
-    }
-
-
-    @AfterMethod
-    public void tearDown() {
-        System.out.println("Now we make tear down for method testCalculator");
-    }
-    @BeforeClass
-    public void beforeClass() {
-        System.out.println("Now we run tests from the CalculatorTest class");
-    }
-
-    @AfterClass
-    public void afterClass() {
-        System.out.println("Now we finish tests from the CalculatorTest class");
-    }
-
-    @BeforeTest
-    public void beforeTest() {
-        System.out.println("Start to run our tests");
-    }
-
-    @AfterTest
-    public void afterTest() {
-        System.out.println("Our tests are done!");
-    }
-
-    @BeforeSuite
-    public void beforeSuite() {
-        System.out.println("In this suite we will execute CalculatorTest and LoginTest");
-    }
-    @AfterSuite
-    public void afterSuite() {
-        System.out.println("The suite of tests is now finished");
     }
 
     private void testCalculatorWithPrivate() {
